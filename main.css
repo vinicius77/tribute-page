@@ -107,10 +107,6 @@ main#main div#tribute-info button {
   width: 180px;
 }
 
-main#main div#tribute-info button:hover {
-  transform: scale(1.1);
-}
-
 main div#img-div {
   display: flex;
   flex-direction: column;
