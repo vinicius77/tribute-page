@@ -13,16 +13,20 @@
 body {
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 40px 20px 40px;
 }
 
 header {
   padding: 20px;
-  width: 100;
+  width: 100%;
   background-color: #fff;
   text-align: center;
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
 }
 
@@ -30,7 +34,7 @@ header h1 {
   font-size: 32px;
   letter-spacing: 2px;
   color: rgb(0, 0, 0);
-  padding: 5px 25px;
+  padding: 5px 5px;
   border-radius: 5px;
 }
 
@@ -41,7 +45,7 @@ header h1 span {
   border-radius: 5px;
 }
 
-header#nav {
+header nav {
   color: #000;
 }
 
@@ -58,4 +62,163 @@ header nav a#tribute-link {
   background-color: var(--marine-blue);
   padding: 10px 20px;
   border-radius: 25px;
+}
+
+main#main {
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-top: 40px;
+}
+
+main#main div#tribute-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 65%;
+}
+
+main#main div#tribute-info h1 {
+  color: var(--marine-blue);
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 0.8rem;
+  margin-bottom: 30px;
+}
+
+main#main div#tribute-info p {
+  line-height: 1.5em;
+  font-weight: 400;
+}
+
+main#main div#tribute-info button {
+  border: none;
+  outline: none;
+  background-color: var(--marine-blue);
+  color: #fff;
+  font-weight: 600;
+  letter-spacing: 4px;
+  padding: 18px 0px;
+  border-radius: 35px;
+  font-size: 18px;
+  margin-top: 30px;
+  cursor: pointer;
+  width: 180px;
+}
+
+main#main div#tribute-info button:hover {
+  transform: scale(1.1);
+}
+
+main div#img-div {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
+
+main div#img-div img {
+  width: 80%;
+}
+
+main div#img-div p {
+  font-size: 20px;
+  font-style: italic;
+  text-align: center;
+}
+
+@media (max-width: 1228px) {
+  main#main div#tribute-info h1 {
+    font-size: 29px;
+    letter-spacing: normal;
+  }
+
+  main div#img-div img {
+    width: 75%;
+    margin-left: 20px;
+  }
+
+  main div#img-div p#img-caption {
+    margin-left: 15px;
+    text-align: start;
+    font-weight: normal;
+  }
+}
+
+@media (max-width: 946px) {
+  main#main {
+    margin-bottom: 20px;
+  }
+
+  main div#img-div img {
+    width: 70%;
+  }
+
+  main#main div#tribute-info button {
+    margin-top: 25px;
+    width: 160px;
+  }
+}
+
+@media (max-width: 745px) {
+  main#main {
+    flex-direction: column-reverse;
+    width: 100%;
+    align-items: center;
+  }
+
+  main#main div#tribute-info {
+    width: 100%;
+    align-items: center;
+  }
+
+  main div#img-div {
+    width: 100%;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+
+  main div#img-div img {
+    width: 50%;
+  }
+
+  main div#img-div p {
+    font-size: 15px;
+  }
+
+  header {
+    padding: 5px;
+  }
+
+  header h1 {
+    font-size: 23px;
+  }
+}
+
+@media (max-width: 540px) {
+  header {
+    justify-content: center;
+  }
+
+  header h1 {
+    font-size: 30px;
+    margin-top: 20px;
+  }
+
+  header nav {
+    display: none;
+  }
+
+  main#main div#tribute-info button {
+    font-weight: 500;
+    padding: 18px 0px;
+    font-size: 16px;
+    width: 100%;
+  }
+}
+
+@media (max-width: 390px) {
+  main#main div#tribute-info h1 {
+    font-size: 23px;
+  }
 }
