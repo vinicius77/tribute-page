@@ -110,11 +110,12 @@ main div#img-div {
   display: flex;
   flex-direction: column;
   align-content: center;
-  width: 34%;
+  width: 450px;
+  max-width: 100%;
 }
 
 main div#img-div img {
-  width: 80%;
+  max-width: 450px;
 }
 
 main div#img-div p {
